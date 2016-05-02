@@ -61,15 +61,15 @@ shinyUI(
                                  showOutput("populationImpact", "nvd3"),
                                  h4('Economic impact by year', align = "center"),
                                  showOutput("economicImpact", "nvd3")
-                        ),
+                        )#,
                         
 
                         
                         # Data 
-                        tabPanel(p(icon("table"), "Data"),
-                            dataTableOutput(outputId="table"),
-                            downloadButton('downloadData', 'Download')
-                        )
+                       # tabPanel(p(icon("table"), "Data"),
+                        #    dataTableOutput(outputId="table"),
+                         #   downloadButton('downloadData', 'Download')
+                        #)
                     )
                 )
             
